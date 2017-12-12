@@ -1,0 +1,20 @@
+q2
+
+Linux system and DB server security:
+
+Make sure to use SSH for connecting to remote computers, and be sure to keep your SSH key private. You should opt for SSL encryption and use HTTPS rather than HTTP for added security, besides it will be mandatory soon enough! As for securing your databases, make sure to keep your passwords secret. You can configure which URLs are allowed access to your data, and only allow them if they have proper credentials. Also, you must make sure to sterilize all of your inputs on your webpages to ensure that your database is protected from SQL injection attacks.
+
+
+
+q5.
+
+Pros of TDD:
+
+1. It encourages good architecture.
+2. It also produces readable code which is easier to refactor.
+
+Cons of TDD:
+
+2. It initially causes development to slow down because you have to write the tests.
+
+In my opinion, test driven development makes sense if you have a large-scale project that involves several developers working with the same code for an extended period of time. It makes less sense if you have a single developer, or a few developers working on a small to medium sized project with a tighter deadline.

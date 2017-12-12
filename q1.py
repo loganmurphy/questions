@@ -1,5 +1,3 @@
-q1
-
 dates = [
         'Oct 7, 2009', 'Nov 10, 2009', 'Jan 10, 2009',
         'Oct 22, 2009', 'Oct 3, 2004', 'Dec 10, 1984',
@@ -24,6 +22,7 @@ months  = {
 def date_sorter(dates, months):
     splitDates = []
     intDates = []
+    temp = []
     sorted_dates = []
 # Here I am splitting the dates into lists and removing the commas
     for date in dates:
@@ -53,8 +52,9 @@ def date_sorter(dates, months):
         for key, value in months.iteritems():
             if value == newDate[0]:
                 newDate[0] = key
+                newDate[1] = newDate[1] + ','
+                newDate = ' '.join(newDate)
                 sorted_dates.append(newDate)
-
     print(sorted_dates)
 
 date_sorter(dates, months)
