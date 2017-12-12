@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="square.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <title>Rotating Square!</title>
+  </head>
+  <body>
+
+    <div id='red_square'></div>
+
+    <script>
+
+      $('document').ready(function(){
+        $('#red_square').click(function(){
+            $('#red_square').addClass('rotate')
+            setTimeout(function(){
+              $('#red_square').removeClass('rotate')
+            }, 2000)
+        });
+      });
+
+    </script>
+
+  </body>
+</html>

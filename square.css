@@ -1,0 +1,30 @@
+#red_square {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 8rem auto 0 auto;
+  background-color: red;
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+/* Here's a list of the browsers that support CSS Animation
+https://caniuse.com/#search=css%20animation. Currently only
+the Opera Mini doesn't support it*/
+
+@keyframes rotate {
+  25% {
+    transform: rotate3d(0, 0, 1, 30deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 60deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+}
